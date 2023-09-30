@@ -1,0 +1,870 @@
+/* RESET */
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+/* HEADER-INICIO */
+#header-inicio{
+    width: 98vw;
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    border: 2px solid black;
+}
+#header-inicio .logo{
+    width: 100px;
+    height: 100px;
+}
+#header-inicio nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+#header-inicio nav a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    padding: 5px 15px 5px 15px;
+}
+#header-inicio nav a:hover{
+    border-radius: 3px;
+    background-color: black;
+    color: white;
+}
+#header-inicio .busqueda{
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#header-inicio .button{
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#header-inicio .button:hover{
+    background-color: white;
+    color: black;
+}
+/* MAIN-INICIO */
+#main-inicio{
+    width: 90vw;
+    height: 110vh;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "nosotros nosotros nosotros"
+    "granas lisos pasteles"
+    ;
+}
+#main-inicio .nosotros{
+    grid-area: nosotros;
+    display: flex;
+    border-bottom: 2px solid black
+}
+#main-inicio .nosotros .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#main-inicio .nosotros .text h1{
+    text-transform: uppercase;
+}
+#main-inicio .nosotros .text p{
+    text-align: center;
+    max-width: 500px;
+}
+#main-inicio .nosotros .text button{
+    padding: 8px 10px 8px 10px;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#main-inicio .nosotros .text button:hover{
+    background-color: white;
+}
+#main-inicio .nosotros .text button a{
+    padding: 10px 25px 10px 25px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#main-inicio .nosotros .text button a:hover{
+    color: black;
+}
+#main-inicio .nosotros img{
+    width: 1000px;
+    height: 400px;
+}
+#main-inicio .granas{
+    grid-area: granas;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#main-inicio .granas img{
+    width: 300px;
+    height: 150px;
+}
+#main-inicio .granas button{
+    padding: 5px 8px 5px 8px;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#main-inicio .granas button:hover{
+    background-color: white;
+}
+#main-inicio .granas button a{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#main-inicio .granas button a:hover{
+    color: black;
+}
+#main-inicio .lisos{
+    grid-area: lisos;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+#main-inicio .lisos img{
+    width: 300px;
+    height: 200px;
+}
+#main-inicio .lisos button{
+    padding: 5px 8px 5px 8px;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#main-inicio .lisos button:hover{
+    background-color: white;
+}
+#main-inicio .lisos button a{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#main-inicio .lisos button a:hover{
+    color: black;
+}
+#main-inicio .pastel{
+    grid-area: pasteles;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#main-inicio .pastel img{
+    width: 300px;
+    height: 150px;
+}
+#main-inicio .pastel button{
+    padding: 5px 8px 5px 8px;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#main-inicio .pastel button:hover{
+    background-color: white;
+}
+#main-inicio .pastel button a{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#main-inicio .pastel button a:hover{
+    color: black;
+}
+/* FOOTER-INICIO */
+#footer-inicio{
+    width: 98vw;
+    height: 22vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: auto;
+    border: 2px solid black;
+    color: white;
+    background-color: black;
+}
+#footer-inicio .nombre-empresa{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 40px 0px 30px 0px;
+}
+#footer-inicio .sections h3{
+    margin: 10px 0px 0px 0px;
+}
+#footer-inicio .sections ul{
+    list-style: none;
+}
+#footer-inicio .sections a{
+    color: white;
+    text-decoration: none;
+}
+#footer-inicio .horarios h3{
+    margin: 10px 0px 0px 0px
+}
+#footer-inicio .horarios ul{
+    list-style: none;
+}
+#footer-inicio .contactos h3{
+    margin: 10px 0px 0px 0px
+}
+#footer-inicio .contactos ul{
+    list-style: none;
+}
+
+/* ARTICULOS-HEADER */
+/* ARTICULOS-MAIN */
+#main-articulos{
+    width: 90vw ;
+    height: 250vh;
+    margin: auto;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+#main-articulos h1{
+    display: block;
+    margin: 0px 0px 0px 27px;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+#main-articulos .vasos_colores{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 1120px;
+    margin: auto;
+}
+#main-articulos .vasos_colores .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#main-articulos .vasos_colores .text h3{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    padding: 5px 0px 5px 0px;
+}
+#main-articulos .vasos_colores .text button{
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px
+}
+#main-articulos .vasos_colores .text a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 12px;
+    padding: 5px 15px 5px 15px;
+}
+#main-articulos .vasos_colores .text button:hover{
+    background-color: white;
+}
+#main-articulos .vasos_colores .text a:hover{
+    color: black;
+}
+#main-articulos .vasos_colores img{
+    width: 900px;
+    height: 400px;
+}
+#main-articulos .vasos_catalogo{
+    display: grid;
+    grid-template-columns: repeat(3,1.5fr);
+    grid-template-rows: repeat(3,5fr);
+    grid-template-areas: 
+    "cafe lisos-blancos kraft"
+    "pasteles corazones granas"
+    "gold-plata gold-oro gold-rose"
+    ;
+    justify-items: center;
+    margin: 15px 0px 0px 0px;
+}
+#main-articulos .vasos_catalogo .cafe{
+    grid-area: cafe;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 230px;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin: 5px 0px 0px 0px;
+}
+#main-articulos .vasos_catalogo .cafe-img{
+    width: 130px;
+    height: 100px;
+}
+#main-articulos .vasos_catalogo .cafe h3{
+    text-transform: uppercase;
+    font-size: 19px;
+}
+#main-articulos .vasos_catalogo .cafe button{
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px
+}
+#main-articulos .vasos_catalogo .cafe button:hover{
+    background-color: white;
+}
+#main-articulos .vasos_catalogo .cafe a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 11px;
+    padding: 5px 10px 5px 10px;
+}
+#main-articulos .vasos_catalogo .cafe a:hover{
+    color: black;
+}
+#main-articulos .vasos_catalogo .lisos-blancos{
+    grid-area: lisos-blancos;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 230px;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin: 5px 0px 0px 0px;
+}
+#main-articulos .vasos_catalogo .lisos-blancos-img {
+    height: 100px ;
+    width: 200px;
+}
+#main-articulos .vasos_catalogo .lisos-blancos h3{
+    text-transform: uppercase;
+    font-size: 19px;
+}
+#main-articulos .vasos_catalogo .lisos-blancos button{
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px
+}
+#main-articulos .vasos_catalogo .lisos-blancos button:hover{
+    background-color: white;
+}
+#main-articulos .vasos_catalogo .lisos-blancos a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 11px;
+    padding: 5px 10px 5px 10px;
+}
+#main-articulos .vasos_catalogo .lisos-blancos a:hover{
+    color: black;
+}
+#main-articulos .vasos_catalogo .kraft{
+    grid-area: kraft;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 230px;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin: 5px 0px 0px 0px;
+}
+#main-articulos .vasos_catalogo .kraft-img{
+    height: 100px;
+    width: 200px;
+}
+#main-articulos .vasos_catalogo .kraft h3{
+    text-transform: uppercase;
+    font-size: 19px;
+}
+#main-articulos .vasos_catalogo .kraft button{
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px
+}
+#main-articulos .vasos_catalogo .kraft button:hover{
+    background-color: white;
+}
+#main-articulos .vasos_catalogo .kraft a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 11px;
+    padding: 5px 10px 5px 10px;
+}
+#main-articulos .vasos_catalogo .kraft a:hover{
+    color: black;
+}
+#main-articulos .vasos_catalogo .pasteles{
+    grid-area: pasteles;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 230px;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin: 5px 0px 0px 0px;
+}
+#main-articulos .vasos_catalogo .pasteles-img{
+    height: 100px;
+    width: 200px;
+}
+#main-articulos .vasos_catalogo .pasteles h3{
+    text-transform: uppercase;
+    font-size: 19px;
+}
+#main-articulos .vasos_catalogo .pasteles button{
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px
+}
+#main-articulos .vasos_catalogo .pasteles button:hover{
+    background-color: white;
+}
+#main-articulos .vasos_catalogo .pasteles a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 11px;
+    padding: 5px 10px 5px 10px;
+}
+#main-articulos .vasos_catalogo .pasteles a:hover{
+    color: black;
+}
+#main-articulos .vasos_catalogo .corazones{
+    grid-area: corazones;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 230px;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin: 5px 0px 0px 0px;
+}
+#main-articulos .vasos_catalogo .corazones-img{
+    height: 100px;
+    width: 200px;
+}
+#main-articulos .vasos_catalogo .corazones h3{
+    text-transform: uppercase;
+    font-size: 19px;
+}
+#main-articulos .vasos_catalogo .corazones button{
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px
+}
+#main-articulos .vasos_catalogo .corazones button:hover{
+    background-color: white;
+}
+#main-articulos .vasos_catalogo .corazones a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 11px;
+    padding: 5px 10px 5px 10px;
+}
+#main-articulos .vasos_catalogo .corazones a:hover{
+    color: black; 
+}
+#main-articulos .vasos_catalogo .granas{
+    grid-area: granas;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 230px;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin: 5px 0px 0px 0px;
+}
+#main-articulos .vasos_catalogo .granas-img{
+    height: 100px;
+    width: 200px;
+}
+#main-articulos .vasos_catalogo .granas h3{
+    text-transform: uppercase;
+    font-size: 19px;
+}
+#main-articulos .vasos_catalogo .granas button{
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px
+}
+#main-articulos .vasos_catalogo .granas button:hover{
+    background-color: white;
+}
+#main-articulos .vasos_catalogo .granas a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 11px;
+    padding: 5px 10px 5px 10px;
+}
+#main-articulos .vasos_catalogo .granas a:hover{
+    color: black;
+}
+#main-articulos .vasos_catalogo .gold-plata{
+    grid-area: gold-plata;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 230px;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin: 5px 0px 0px 0px;
+}
+#main-articulos .vasos_catalogo .gold-plata-img{
+    height: 100px;
+    width: 150px;
+}
+#main-articulos .vasos_catalogo .gold-plata h3{
+    text-transform: uppercase;
+    font-size: 19px;
+}
+#main-articulos .vasos_catalogo .gold-plata button{
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px
+}
+#main-articulos .vasos_catalogo .gold-plata button:hover{
+    background-color: white;
+}
+#main-articulos .vasos_catalogo .gold-plata a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 11px;
+    padding: 5px 10px 5px 10px;
+}
+#main-articulos .vasos_catalogo .gold-plata a:hover{
+    color: black;
+}
+#main-articulos .vasos_catalogo .gold-oro{
+    grid-area: gold-oro;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 230px;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin: 5px 0px 0px 0px;
+}
+#main-articulos .vasos_catalogo .gold-oro-img{
+    height: 100px;
+    width: 150px;
+}
+#main-articulos .vasos_catalogo .gold-oro h3{
+    text-transform: uppercase;
+    font-size: 19px;
+}
+#main-articulos .vasos_catalogo .gold-oro button{
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px
+}
+#main-articulos .vasos_catalogo .gold-oro button:hover{
+    background-color: white;
+}
+#main-articulos .vasos_catalogo .gold-oro a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 11px;
+    padding: 5px 10px 5px 10px;
+}
+#main-articulos .vasos_catalogo .gold-oro a:hover{
+    color: black;
+    }
+#main-articulos .vasos_catalogo .gold-rose{
+    grid-area: gold-rose;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 230px;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin: 5px 0px 0px 0px;
+}
+#main-articulos .vasos_catalogo .gold-rose-img{
+    height: 100px;
+    width: 150px;
+}
+#main-articulos .vasos_catalogo .gold-rose h3{
+    text-transform: uppercase;
+    font-size: 19px;
+}
+#main-articulos .vasos_catalogo .gold-rose button{
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px
+}
+#main-articulos .vasos_catalogo .gold-rose button:hover{
+    background-color: white;
+}
+#main-articulos .vasos_catalogo .gold-rose a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 11px;
+    padding: 5px 10px 5px 10px;
+}
+#main-articulos .vasos_catalogo .goold-rose a:hover{
+    color: black;
+}
+#main-articulos .tematicos{
+    display: flex;
+    height: 600px;
+    align-items: center;
+    justify-content: space-around
+}
+#main-articulos .tematicos .render-unicornio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#main-articulos .tematicos .unicornio-img{
+    width: 550px;
+    height: 550px;
+}
+#main-articulos .tematicos .render-tragos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#main-articulos .tematicos .tragos-img{
+    width: 550px;
+    height: 550px;
+}
+
+/* ARTICULOS-FOOTER */
+
+/* NOSOTROS-HEADER */
+/* NOSOTROS-MAIN */
+#nosotros-main {
+    height: 100vh;
+    width: 90vw;
+    margin: auto;
+    display: grid;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    grid-template-columns:repeat(3,1fr) ;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "nosotros-text nosotros-img nosotros-img"
+    "mision vision valores";
+    justify-items: center;
+    align-items: center;
+}
+#nosotros-main .nosotros-text {
+    grid-area: nosotros-text;
+}
+#nosotros-main .nosotros-text h1 {
+    text-align: center;
+    margin: 15px 0px 0px 0px;
+    text-transform: uppercase;
+}
+#nosotros-main .nosotros-text p {
+    text-align: left;
+    padding: 10px 40px 10px 40px;
+}
+#nosotros-main .nosotros-img {
+    grid-area: nosotros-img;
+}
+#nosotros-main .nosotros-img img {
+    height: 120px;
+    width: 120px;
+}
+#nosotros-main .mision {
+    grid-area: mision;
+    border: 2px solid black;
+    background-color: rgb(140, 247, 41);
+    width: 95%;
+    height: 130px;
+    border-radius: 65px
+    ;
+}
+#nosotros-main .mision h3 {
+    text-align: center;
+    margin: 15px 0px 0px 0px;
+    text-transform: uppercase;
+}
+#nosotros-main .mision p {
+    text-align: center;
+    margin: 20px 20px 20px 20px;
+}
+#nosotros-main .vision {
+    grid-area: vision;
+    border: 2px solid black;
+    background-color: rgb(140, 247, 41);
+    width: 95%;
+    height: 130px;
+    border-radius: 65px
+}
+#nosotros-main .vision h3 {
+    text-align: center;
+    margin: 15px 0px 0px 0px;
+    text-transform: uppercase;
+}
+#nosotros-main .vision p {
+    text-align: center;
+    margin: 20px 20px 20px 20px;
+}
+#nosotros-main .valores {
+    grid-area: valores;
+    border: 2px solid black;
+    background-color: rgb(140, 247, 41);
+    width: 95%;
+    height: 130px;
+    border-radius: 65px
+}
+#nosotros-main .valores h3{
+    text-align: center;
+    margin: 15px 0px 0px 0px;
+    text-transform: uppercase;
+}
+#nosotros-main .valores p {
+    text-align: center;
+    margin: 20px 20px 20px 20px;
+}
+/* NOSOTROS-FOOTER */
+
+/* CONTACTOS-HEADER */
+/* CONTACTOS-MAIN */
+#main-contactos{
+    width: 90vw ;
+    height: 70vh ;
+    margin: auto;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+#main-contactos div{
+    margin: 15px 0px 0px 0px;
+}
+#main-contactos .contactos-text h1{
+    text-transform: uppercase;
+}
+#main-contactos .contactos-text ul{
+    list-style: none;
+    margin: 15px 0px 0px 0px;
+}
+#main-contactos .contactos-text h3{
+    text-transform: uppercase;
+    margin: 10px 0px 0px 0px;
+}
+/* CONTACTOS-FOOTER */
+
+/*  FORMULARIO-HEADER */
+/* FORMULARIO-MAIN */
+#main-formulario{
+    width: 70vw;
+    height: 90vh;
+    margin: auto;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    background-color: white; 
+    display: flex;   
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#main-formulario h1{
+    text-transform: uppercase;
+    font-size: 40px;
+}
+#main-formulario h3{
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    margin: 0px 0px 10px 0px;
+}
+#main-formulario .correo input{
+    width: 350px;
+    height: 25px;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 15px;
+}
+#main-formulario input{
+    width: 250px;
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+}
+#main-formulario textarea{
+   max-width: 450px;
+   min-width: 450px;
+   max-height: 100px;
+   min-height: 50px;
+   border: 2px solid black;
+   border-radius: 5px;
+   font-size: 15px;
+}
+#main-formulario button{
+    padding: 5px 30px 5px 30px;
+    text-transform: uppercase;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: black;
+}
+#main-formulario button:hover{
+    background-color: white;
+}
+#main-formulario button a{
+    text-decoration: none;
+    color: white;
+}
+#main-formulario button a:hover{
+    color: black;
+}
+/* FORMULARIO-FOOTER */
